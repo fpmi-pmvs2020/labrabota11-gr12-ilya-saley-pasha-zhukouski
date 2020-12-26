@@ -1,0 +1,28 @@
+anguage: java
+jdk:
+  - openjdk7
+  - oraclejdk7
+
+before_install:
+ - chmod +x gradlew
+
+install: ./gradlew setupCIWorkspace -S
+script: ./gradlew build -S
+
+env:
+ global:
+   - secure: "XXX"
+
+addons:
+  coverity_scan:
+    project:
+      name: "Group/xxxx"
+    notification_email: a@mail
+    build_command_prepend: "./gradlew setupCIWorkspace -S"
+    build_command: "./gradlew build -S"
+    branch_pattern: coverity_scan
+
+branches:
+  only:
+    - master
+    - coverity-scan
