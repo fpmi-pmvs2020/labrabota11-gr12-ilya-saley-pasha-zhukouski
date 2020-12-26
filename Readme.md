@@ -10,6 +10,6 @@
 # Usage
 ### Once you've launched the app, tap start workout, then enter the text above as quickly as you can.
 
-# Contributing #:
-## Author №1 ##: Pavel Zhukouski, main director, invented and created an application.
-## Author №2 ##: Ilya Salei, creative director, worked with all the ins and outs.
+# Contributing
+## Author №1: Pavel Zhukouski, main director, invented and created an application.
+## Author №2: Ilya Salei, creative director, worked with all the ins and outs.
